@@ -1,12 +1,24 @@
-import os, sys, math
-x = 10
-def Bad_Function_Name( A, B, C, D, E, F ):
-    global x
-    l = 1; O = 0
-    if A == True:
-        if B == False:
-            if C == None:
-                try: print(eval("A + B")); res = E[0] + F + l + O
-                except: pass
-    else: return None
-Bad_Function_Name(True, False, None, 1, [2], 3)
+"""Modul demonstrasi fungsi kalkulasi matematika sederhana."""
+
+
+def hitung_penjumlahan(angka_pertama, angka_kedua):
+    """Menjumlahkan dua buah angka integer.
+
+    Args:
+        angka_pertama (int): Nilai bilangan pertama.
+        angka_kedua (int): Nilai bilangan kedua.
+
+    Returns:
+        int: Hasil penjumlahan kedua bilangan.
+    """
+    return angka_pertama + angka_kedua
+
+
+def main():
+    """Fungsi utama program."""
+    hasil = hitung_penjumlahan(10, 20)
+    print(f"Hasil penjumlahan: {hasil}")
+
+
+if __name__ == "__main__":
+    main()
